@@ -40,3 +40,23 @@ console.log('This item was just added:', newAlbum5)
 let newAlbum6 = addToCollection('From Vegas to Memphis', 'Elvis Presley', 1969)
 console.log('This item was just added:', newAlbum6)
 
+console.log(collection)
+//end first test
+
+
+//function to show the collection
+function showCollection() {
+    //console.log number of items in the array
+    console.log('number of items in the array', collection);
+ for (let index = 0; index < collection.length; index++) {
+    //Loop over the array and console.log each album's information formatted like: TITLE by ARTIST, published in YEAR.
+    console.log(collection[index].title + " by " + collection[index].artist + ", published in " + collection[index].year);
+    }
+}
+//test the showCollection function
+showCollection();
+
+//end second test
+
+
+  
